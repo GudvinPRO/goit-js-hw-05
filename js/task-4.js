@@ -1,10 +1,5 @@
-
-const sortByDescendingFriendCount = (users, gender);
-
-
-
 const allUsers = [
-  {
+{
   name: "Moore Hensley",
   gender: "male",
   balance: 2811
@@ -40,6 +35,22 @@ const allUsers = [
   balance: 2764
 }
 ];
+
+
+
+let sum = 0;
+
+const getTotalBalanceByGender = (users, gender) => users.reduce((sum, user) => {
+  if (user.gender === gender) {
+    sum += user.balance;
+  }
+  return sum;
+}, 0);;
+
+
+
+
+
 
 console.log(getTotalBalanceByGender(allUsers, "male")); // 12053
 
