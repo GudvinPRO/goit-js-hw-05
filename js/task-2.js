@@ -1,4 +1,4 @@
-const allUsers = [
+const allUserss = [
   {
     name: "Moore Hensley",
     friends: ["Sharron Pace"]
@@ -39,7 +39,7 @@ getUsersWithFriend = (users, friendName) => users.filter(user => user.friends.in
 //users.filter(user => user.friends === friendName)
 
 
-console.log(getUsersWithFriend(allUsers, "Briana Decker")); 
+console.log(getUsersWithFriend(allUserss, "Briana Decker")); 
 // [
 //   {
 //     name: "Sharlene Bush",
@@ -51,7 +51,7 @@ console.log(getUsersWithFriend(allUsers, "Briana Decker"));
 //   }
 // ]
 
-console.log(getUsersWithFriend(allUsers, "Goldie Gentry"));
+console.log(getUsersWithFriend(allUserss, "Goldie Gentry"));
 // [
 //   {
 //     name: "Elma Head",
@@ -63,4 +63,4 @@ console.log(getUsersWithFriend(allUsers, "Goldie Gentry"));
 //   }
 // ]
 
-console.log(getUsersWithFriend(allUsers, "Adrian Cross" )); // []
+console.log(getUsersWithFriend(allUserss, "Adrian Cross" )); // []
